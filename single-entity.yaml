@@ -1,0 +1,13 @@
+key: test-switch-04
+type: switch
+adapter: network
+management_status: managed
+config:
+  hostname: "{{ .Values.hostname_prefix }}switch01.{{ .Values.domain }}"
+  interfaces: 48
+  mgmt_ip: 192.168.1.101
+relationships:
+  - type: connects_to
+    target: test-router-01
+
+ 
