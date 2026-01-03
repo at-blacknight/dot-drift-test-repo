@@ -1,6 +1,6 @@
 key: test-srv-001.domain.com
-type: switch
-adapter: network
+type: computer
+adapter: compute
 management_status: managed
 config:
   hostname: "{{ .Values.hostname_prefix }}switch01.{{ .Values.domain }}"
