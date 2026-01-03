@@ -1,6 +1,6 @@
 key: test-srv-001.domain.com
 type: switch
-adapter: ActiveDirectory
+adapter: network
 management_status: managed
 config:
   hostname: "{{ .Values.hostname_prefix }}switch01.{{ .Values.domain }}"
