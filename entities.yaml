@@ -1,0 +1,29 @@
+entities:
+  - key: test-switch-01
+    type: switch
+    adapter: network
+    management_status: managed
+    config:
+      hostname: "{{ .Values.hostname_prefix }}switch01.{{ .Values.domain }}"
+      interfaces: 48
+      mgmt_ip: 192.168.1.101
+    relationships:
+      - type: connects_to
+        target: test-router-01
+
+  - key: test-router-01
+    type: router
+    adapter: network
+    management_status: managed
+    config:
+      hostname: "{{ .Values.hostname_prefix }}router01.{{ .Values.domain }}"
+      interfaces: 24
+      mgmt_ip: 192.168.1.1
+
+  - key: test-server-01
+    type: server
+    adapter: compute
+    management_status: unmanaged
+    config:
+      hostname: server01.example.com
+      os: linux

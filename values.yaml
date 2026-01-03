@@ -1,0 +1,6 @@
+defaults:
+  domain: example.com
+  hostname_prefix: lab-
+
+environment: test
+datacenter: dc1
