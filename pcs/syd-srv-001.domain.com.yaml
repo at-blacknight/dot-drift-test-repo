@@ -1,5 +1,5 @@
-key: syd-srv-001
-type: computer
+key: test-srv-001.domain.com
+type: switch
 adapter: ActiveDirectory
 management_status: managed
 config:
