@@ -1,0 +1,13 @@
+key: syd-srv-001.domain.com
+type: computer
+adapter: ActiveDirectory
+management_status: managed
+config:
+  hostname: "{{ .Values.hostname_prefix }}switch01.{{ .Values.domain }}"
+  interfaces: 48
+  mgmt_ip: 192.168.1.101
+relationships:
+  - type: connects_to
+    target: test-switch-04
+
+ 
