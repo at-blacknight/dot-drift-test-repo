@@ -1,4 +1,4 @@
-key: syd-srv-001.domain.com
+key: syd-srv-001
 type: computer
 adapter: ActiveDirectory
 management_status: managed
